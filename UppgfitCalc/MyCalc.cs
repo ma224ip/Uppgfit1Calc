@@ -30,6 +30,7 @@ namespace UppgfitCalc
             while (true)
             {
                 
+                // Jag sökte på internet för att hitta ett sätt att kontrollera om användare har skrivt ett nummer eller inte.
                 double number1, number2;
                 while (true)
                 {
