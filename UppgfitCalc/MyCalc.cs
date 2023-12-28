@@ -18,7 +18,7 @@ namespace UppgfitCalc
     {
         public static void Main()
         {
-            // Välkomnande meddelande
+            //  Välkomnande meddelande
             Console.WriteLine("------------------------");
             Console.WriteLine("Welcome to my Calculator");
             Console.WriteLine("------------------------");
