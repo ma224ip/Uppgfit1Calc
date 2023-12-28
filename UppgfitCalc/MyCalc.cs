@@ -29,12 +29,34 @@ namespace UppgfitCalc
             // En while loop för att utförra räkningar tills användare säger nej
             while (true)
             {
-                Console.WriteLine("Enter your first number:");
-                double number1 = double.Parse(Console.ReadLine());
+                
+                double number1, number2;
+                while (true)
+                {
+                    Console.WriteLine("Enter your first number:");
+                    if (double.TryParse(Console.ReadLine(), out number1))
+                    {
+                        break; // Avsluta loopen om giltig inmatning
+                    }
+                    else
+                    {
+                        Console.WriteLine("You need to write a number.");
+                    }
+                }
 
-                Console.WriteLine("Enter your second number:");
-                double number2 = double.Parse(Console.ReadLine());
-
+                while (true)
+                {
+                    Console.WriteLine("Enter your second number:");
+                    if (double.TryParse(Console.ReadLine(), out number2))
+                    {
+                        break; // Avsluta loopen om giltig inmatning
+                    }
+                    else
+                    {
+                        Console.WriteLine("You need to write a number.");
+                    }
+                }
+                
                 Console.WriteLine("Enter one of the options");
                 Console.WriteLine("+ : To add");
                 Console.WriteLine("- : To subtract");
